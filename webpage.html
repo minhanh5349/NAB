@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="layout.css">
+ 
+  <script>
+    // Hiển thị tab ban đầu
+document.getElementById("Home").style.display = "block";
+
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+
+  // Ẩn tất cả nội dung tab
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  // Xóa lớp 'active' khỏi tất cả các nút tab
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  // Hiển thị nội dung tab đã chọn
+  document.getElementById(tabName).style.display = "block";
+  // Thêm lớp 'active' vào nút tab đã nhấp
+  evt.currentTarget.className += " active";
+}
+
+  </script>
+</head>
+<body>
+  <div id="fullPageTab">
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+      <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+    </div>
+  
+    <div id="Home" class="tabcontent">
+        <div class="wrapper row2">
+            <div id="container" class="clear">
+              <!-- content body -->
+              <div id="homepage">
+                <!-- One Quarter -->
+                <section id="latest" class="clear">
+                  <article class="one_quarter">
+                    <figure><img src="1.jpg" width="215" height="315" alt="">
+                      <figcaption>hình 1</figcaption>
+                    </figure>
+                  </article>
+                  <article class="one_quarter">
+                    <figure><img src="1.jpg" width="215" height="315" alt="">
+                      <figcaption>hình 2</figcaption>
+                    </figure>
+                  </article>
+                  <article class="one_quarter">
+                    <figure><img src="1.jpg" width="215" height="315" alt="">
+                      <figcaption>hình 3</figcaption>
+                    </figure>
+                  </article>
+                  <article class="one_quarter lastbox">
+                    <figure><img src="1.jpg" width="215" height="315" alt="">
+                      <figcaption>hình 4</figcaption>
+                    </figure>
+                  </article>
+                </section>
+                <!-- / One Quarter -->
+                <section id="shout">
+                  <p style="text-align: justify;">Nhiệm vụ bất khả thi hay Điệp vụ bất khả thi (tựa gốc tiếng Anh: Mission: Impossible) là một loạt phim về điệp viên hành động của Mỹ dựa trên và là phần tiếp theo của loạt phim truyền hình cùng tên do Bruce Geller tạo ra. Bộ phim chủ yếu được sản xuất bởi Tom Cruise trong vai Ethan Hunt, một đặc vụ của Lực lượng Nhiệm vụ Bất khả thi (Impossible Missions Force - IMF), trong suốt 30 năm sự nghiệp của anh ấy. Các bộ phim đã được đạo diễn, viết kịch bản và chấm điểm từ các nhà làm phim và đoàn làm phim khác nhau, đồng thời kết hợp các chủ đề âm nhạc từ loạt phim gốc của Lalo Schifrin..
+                  </p>
+                </section>
+              </div>
+              <!-- main content -->
+              <div class="wrapper row2">
+                <div id="container" class="clear">
+                  <!-- content body -->
+                 
+                  <!-- main content -->
+                  <div id="content">
+                    <section id="services" class="last clear">
+                      <ul>
+                        <li>
+                          <article class="clear">
+                            <figure><img src="1.jpg" alt="">
+                              <figcaption>
+                                <h2>TẬP 1</h2>
+                                <p>Nhiệm vụ bất khả thi: Nghiệp báo – Phần 1 là một bộ phim điện ảnh Mỹ thuộc thể loại điệp viên hành động công chiếu vào năm 2023 do Christopher McQuarrie làm đạo diễn, viết kịch bản và đồng sản xuất. Đây là phần thứ bảy và là phần áp chót của loạt phim Nhiệm vụ bất khả thi, và phần ba trong loạt phim do McQuarrie đạo diễn, sau Quốc gia bí ẩn và Sụp đổ.</p>
+                                <footer class="more"><a href="#">Read More &raquo;</a></footer>
+                              </figcaption>
+                            </figure>
+                          </article>
+                        </li>
+                        <li class="last">
+                          <article class="clear">
+                            <figure><img src="1.jpg" alt="">
+                              <figcaption>
+                                <h2>TẬP 2</h2>
+                                <p>Nhiệm vụ bất khả thi: Nghiệp báo – Phần 1 là một bộ phim điện ảnh Mỹ thuộc thể loại điệp viên hành động công chiếu vào năm 2023 do Christopher McQuarrie làm đạo diễn, viết kịch bản và đồng sản xuất. Đây là phần thứ bảy và là phần áp chót của loạt phim Nhiệm vụ bất khả thi, và phần ba trong loạt phim do McQuarrie đạo diễn, sau Quốc gia bí ẩn và Sụp đổ.</p>
+                                <footer class="more"><a href="#">Read More &raquo;</a></footer>
+                              </figcaption>
+                            </figure>
+                          </article>
+                        </li>
+                      </ul>
+                    </section>
+                  </div>
+                  <!-- right column -->
+                  <aside id="right_column">
+                    <h2 class="title">Categories</h2>
+                    <nav>
+                      <ul>
+                        <li><a href="#">Phim Hành động</a></li>
+                        <li><a href="#">Phim tình cảm</a></li>
+                        <li><a href="#">Phim gia đình</a></li>
+                        <li><a href="#">Phim sitcom</a></li>
+                        <li><a href="#">Phim hoạt hình</a></li>
+                        <li><a href="#">Phim kinh dị</a></li>
+                        <li><a href="#">Phim Khoa học viễn tưởng</a></li>
+                        <li><a href="#">Phim Âu Mỹ</a></li>
+                        <li><a href="#">Phim Ấn độ</a></li>
+                        <li class="last"><a href="#">Phim Hàn</a></li>
+                      </ul>
+                    </nav>
+                    <!-- /nav -->
+                  </aside>
+                  <!-- / content body -->
+                </div>
+              </div>
+              <!-- / content body -->
+            </div>
+          </div>
+    </div>
+  
+    <div id="About" class="tabcontent">
+        <div class="wrapper row2">
+            <div id="container" class="clear">
+              <!-- content body -->
+              <div id="homepage">
+                <!-- One Quarter -->
+                <section id="latest" class="clear">
+                  <article class="one_quarter">
+                    <figure><img src="1.jpg" width="215" height="315" alt="">
+                      <figcaption>hình 1</figcaption>
+                    </figure>
+                  </article>
+                  <article class="one_quarter">
+                    <figure><img src="1.jpg" width="215" height="315" alt="">
+                      <figcaption>hình 2</figcaption>
+                    </figure>
+                  </article>
+                  <article class="one_quarter">
+                    <figure><img src="1.jpg" width="215" height="315" alt="">
+                      <figcaption>hình 3</figcaption>
+                    </figure>
+                  </article>
+                  <article class="one_quarter lastbox">
+                    <figure><img src="1.jpg" width="215" height="315" alt="">
+                      <figcaption>hình 4</figcaption>
+                    </figure>
+                  </article>
+                </section>
+                <!-- / One Quarter -->
+                <section id="shout">
+                  <p style="text-align: justify;">Nhiệm vụ bất khả thi hay Điệp vụ bất khả thi (tựa gốc tiếng Anh: Mission: Impossible) là một loạt phim về điệp viên hành động của Mỹ dựa trên và là phần tiếp theo của loạt phim truyền hình cùng tên do Bruce Geller tạo ra. Bộ phim chủ yếu được sản xuất bởi Tom Cruise trong vai Ethan Hunt, một đặc vụ của Lực lượng Nhiệm vụ Bất khả thi (Impossible Missions Force - IMF), trong suốt 30 năm sự nghiệp của anh ấy. Các bộ phim đã được đạo diễn, viết kịch bản và chấm điểm từ các nhà làm phim và đoàn làm phim khác nhau, đồng thời kết hợp các chủ đề âm nhạc từ loạt phim gốc của Lalo Schifrin..
+                  </p>
+                </section>
+              </div>
+              <!-- main content -->
+              <div class="wrapper row2">
+                <div id="container" class="clear">
+                  <!-- content body -->
+                 
+                  <!-- main content -->
+                  <div id="content">
+                    <section id="services" class="last clear">
+                      <ul>
+                        <li>
+                          <article class="clear">
+                            <figure><img src="1.jpg" alt="">
+                              <figcaption>
+                                <h2>TẬP 1</h2>
+                                <p>Nhiệm vụ bất khả thi: Nghiệp báo – Phần 1 là một bộ phim điện ảnh Mỹ thuộc thể loại điệp viên hành động công chiếu vào năm 2023 do Christopher McQuarrie làm đạo diễn, viết kịch bản và đồng sản xuất. Đây là phần thứ bảy và là phần áp chót của loạt phim Nhiệm vụ bất khả thi, và phần ba trong loạt phim do McQuarrie đạo diễn, sau Quốc gia bí ẩn và Sụp đổ.</p>
+                                <footer class="more"><a href="#">Read More &raquo;</a></footer>
+                              </figcaption>
+                            </figure>
+                          </article>
+                        </li>
+                        <li class="last">
+                          <article class="clear">
+                            <figure><img src="1.jpg" alt="">
+                              <figcaption>
+                                <h2>TẬP 2</h2>
+                                <p>Nhiệm vụ bất khả thi: Nghiệp báo – Phần 1 là một bộ phim điện ảnh Mỹ thuộc thể loại điệp viên hành động công chiếu vào năm 2023 do Christopher McQuarrie làm đạo diễn, viết kịch bản và đồng sản xuất. Đây là phần thứ bảy và là phần áp chót của loạt phim Nhiệm vụ bất khả thi, và phần ba trong loạt phim do McQuarrie đạo diễn, sau Quốc gia bí ẩn và Sụp đổ.</p>
+                                <footer class="more"><a href="#">Read More &raquo;</a></footer>
+                              </figcaption>
+                            </figure>
+                          </article>
+                        </li>
+                      </ul>
+                    </section>
+                  </div>
+                  <!-- right column -->
+                  <aside id="right_column">
+                    <h2 class="title">Categories</h2>
+                    <nav>
+                      <ul>
+                        <li><a href="#">Phim Hành động</a></li>
+                        <li><a href="#">Phim tình cảm</a></li>
+                        <li><a href="#">Phim gia đình</a></li>
+                        <li><a href="#">Phim sitcom</a></li>
+                        <li><a href="#">Phim hoạt hình</a></li>
+                        <li><a href="#">Phim kinh dị</a></li>
+                        <li><a href="#">Phim Khoa học viễn tưởng</a></li>
+                        <li><a href="#">Phim Âu Mỹ</a></li>
+                        <li><a href="#">Phim Ấn độ</a></li>
+                        <li class="last"><a href="#">Phim Hàn</a></li>
+                      </ul>
+                    </nav>
+                    <!-- /nav -->
+                  </aside>
+                  <!-- / content body -->
+                </div>
+              </div>
+              <!-- / content body -->
+            </div>
+          </div>
+    </div>
+  
+</body>
+</html>
